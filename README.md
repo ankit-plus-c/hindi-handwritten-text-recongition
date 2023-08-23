@@ -25,10 +25,10 @@ The model detail found
 
 ![here](images/model_detail.png)
 # Requirements
-1. Tensorflow 1.8.0
+1. TensorFlow 1.8.0
 2. Flask
 3. Numpy
-4. OpenCv 3
+4. OpenCV 3
 
 #### Dataset Used
 The IIT Devnagari Word Dataset is used for training. It can be downloaded from [Devanagiri Dataset (IIIT-HW-Dev)](https://cvit.iiit.ac.in/research/projects/cvit-projects/indic-hw-data).
