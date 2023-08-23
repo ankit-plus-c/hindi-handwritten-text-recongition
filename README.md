@@ -7,7 +7,7 @@ This project involves using a Convolutional Recurrent Neural Network (CRNN) to r
 * Initially, a Convolutional Recurrent Neural Network is employed to extract crucial features from the handwritten text image.
 * The output before the fully connected (FC) layer of the CNN (512x100x8) is passed through a Bidirectional Long Short-Term Memory (BLSTM) layer. This facilitates capturing sequential dependencies and performing time-sequence operations.
 * The CTC loss, as introduced by [Alex Graves](https://www.cs.toronto.edu/~graves/icml_2006.pdf) is used to train the BLSTM. This loss effectively addresses the alignment variations present in different handwriting styles. Given the ground truth text and the BLSTM's output, the loss is computed as `-log("gtText")` aiming to minimize the negative maximum likelihood path.
-* CTC determines potential paths based on the provided labels. The loss for the (X,Y) pair is given by: ![Ctc_Loss](images/CtcLossFormula.png "CTC loss for the (X,Y) pair")
+* CTC determines potential paths based on the provided labels.
 * During prediction, CTC decoding is employed to interpret the output.
 </i>
 
@@ -58,5 +58,3 @@ Init with stored values from ../model/snapshot-2
 Recognized: "होसले"
 Probability: 0.7297366
 ```
-# DEMO
-![Demo of The Code Run](https://github.com/ankit-plus-c/hindi-handwritten-word-recongition/blob/master/images/Devnagari_Word_Recognition_final.gif "Demo of the Output")
